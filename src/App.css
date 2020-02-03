@@ -1,0 +1,109 @@
+.App {
+    max-width: 960px;
+    margin: 10px auto;
+  }
+  
+  .text-center {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  
+  /* Dropzone */
+  .dropzone {
+    width: 100%;
+    padding: 30px;
+    height: 30vh;
+    /* border: 1px solid  black; */
+    outline: none;
+    cursor: pointer;
+  }
+  .dropzone-active {
+    background-color: #f1e2ff;
+    border: 5px solid #2fd7b5;
+  }
+  .dropzone-content {
+    align-self: center;
+    font-size: 24px;
+  }
+  
+  /* Images */
+  .file-list {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+  }
+  .file-item {
+    width: calc(17%);
+    height: 100px;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    margin: 10px;
+    /* cursor: move; */
+    transition: all 0.2s linear;
+  }
+  .file-img {
+    width: 100%;
+    height: 100%;
+  }
+  .add-image{
+    margin: 20px 0;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+  }
+  .image-details{
+    width: calc(50%);
+    padding: 5px;
+    margin-left: 10px;
+    height: 30vh;
+    border: 1px solid black;
+    outline: none;
+    /* cursor: pointer; */
+
+  }
+.outline{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+  .btn-save{
+    width: 100%;
+    /* margin: 0; */
+  }
+
+  .project-title{
+    width:100%;
+    height: rem;
+  }
+
+  
+  /* Tablets */
+  @media (max-width: 1000px) {
+    .App {
+      max-width: 600px;
+    }
+    .file-item {
+      width: calc(50% - 22px);
+      height: 200px;
+    }
+  }
+  
+  /* Mobiles */
+  @media (max-width: 640px) {
+    .App {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+    .file-item {
+      width: calc(100% - 22px);
+      height: 200px;
+    }
+  }
